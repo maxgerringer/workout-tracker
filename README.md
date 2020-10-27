@@ -51,6 +51,6 @@ Easily track your workouts, and view a weekly dashboard to visualize them.
 
   ## Demo
 
- ![Tracker Image]("./public/assets/tracker.png")
+ ![Tracker Image]("/public/assets/tracker.png")
 
- ![Dashboard Image]("./public/assets/dashboard.png")
+ ![Dashboard Image]("/public/assets/dashboard.png")
