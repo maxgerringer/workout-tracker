@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static("public"));
 app.use(logger("dev"));
 
-const URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
+const URI = process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker";
 mongoose.connect(
   URI,
   {
