@@ -22,8 +22,8 @@ mongoose.connect(
   (err) => console.log(err)
 );
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+app.use(require("./routes/apiRoutes"));
+app.use(require("./routes/htmlRoutes"));
 
 app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
