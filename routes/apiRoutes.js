@@ -11,6 +11,17 @@ router.get("/api/workouts", (req, res) => {
   });
 });
 
+router.get("/api/workouts/range", (req, res) => {
+  Workout.find({})
+  .limit(7)
+  .then(data => {
+    res.json(data);
+  }).catch(err => {
+    console.log(err);
+    res.status(404).res.json(err);
+  });
+});
+
 router.post("/api/workouts", (req, res) => {
   Workout.create({})
   .then(data => {
